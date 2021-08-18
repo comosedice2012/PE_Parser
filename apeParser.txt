@@ -1,0 +1,390 @@
+                             ____
+           ____  ____  ___  / __ \____  ____________  _____
+          / __ \/ __ \/ _ \/ /_/ / __ \/ ___/ __/ _ \/ ___/
+         / /_/ / /_/ /  __/ ____/ /_/ / /  (__ )  __/ /
+         \__,_/ .___/\___/_/    \__,_/_/  /___/\___/_/
+             /_/
+
+
+
+
+Summary for:  hancitor.bin 
+--------------------------
+
+[+] Hashes:
+    SHA256:  973e503dfea44dfa6128d31ca2f428f3e3d8478bb3750beab088e9e4f0d7de9e
+    MD5:     5edbf9c1df25f87113134fc6569f867d
+    imphash: 9b277dfbd0e98e4ea57d4eeba0dd14c3
+
+[+] Entropy of file:              5.574        
+[+] Image Base:                   0x400000
+[+] E_lfanew:                     0xf0
+[+] Entry Point:                  0x2766
+[+] Size of Image (bytes):        86016
+[+] Number of Sections:           4 
+[+] Section table:
+
+
+      Name       V_Size     V_Addr      Data Size      Entropy      Packed
+    ----------------------------------------------------------------------
+     .text        44339       4096        45056       6.169	      Maybe
+     .rdata        4714      49152         8192       2.676	      
+     .data         4032      57344         4096       0.342	      
+     .rsrc        24560      61440        24576       5.736	      
+
+
+[+] Imports table:
+
+    ADVAPI32.DLL                  RegCloseKey
+                                  RegOpenKeyExA
+                                  RegQueryValueExA
+    KERNEL32.dll                  GetDriveTypeW
+                                  CloseHandle
+                                  CreateDirectoryA
+                                  CreateFileA
+                                  DeleteCriticalSection
+                                  DeviceIoControl
+                                  EnterCriticalSection
+                                  FreeLibrary
+                                  GetCurrentProcess
+                                  GetCurrentProcessId
+                                  GetCurrentThread
+                                  GetCurrentThreadId
+                                  GetFileSize
+                                  GetLastError
+                                  GetModuleFileNameW
+                                  GetModuleHandleA
+                                  GetProcAddress
+                                  GetProcessHeap
+                                  GetProcessTimes
+                                  GetProcessWorkingSetSize
+                                  GetStartupInfoA
+                                  GetSystemTimeAsFileTime
+                                  VirtualProtect
+                                  GetTempPathA
+                                  GetThreadLocale
+                                  GetThreadTimes
+                                  GetTickCount
+                                  GetVersionExA
+                                  GlobalMemoryStatus
+                                  InitializeCriticalSection
+                                  CreateMutexA
+                                  InterlockedExchange
+                                  InterlockedIncrement
+                                  IsDBCSLeadByteEx
+                                  LeaveCriticalSection
+                                  LoadLibraryA
+                                  LocalAlloc
+                                  LocalFree
+                                  MapViewOfFile
+                                  MultiByteToWideChar
+                                  OpenFileMappingA
+                                  QueryPerformanceCounter
+                                  ReadFile
+                                  SetFilePointerEx
+                                  GetCommandLineA
+                                  Sleep
+                                  TlsAlloc
+                                  TlsFree
+                                  TlsGetValue
+                                  TlsSetValue
+                                  TryEnterCriticalSection
+                                  UnmapViewOfFile
+                                  GetACP
+                                  WideCharToMultiByte
+                                  WriteFile
+    msvcrt.dll                    _access
+                                  _close
+                                  _fstat
+                                  _getpid
+                                  _lseek
+                                  _open
+                                  _read
+                                  _setmode
+                                  _strdup
+                                  _stricmp
+                                  _write
+    msvcrt.dll                    __dllonexit
+                                  __lc_codepage
+                                  __mb_cur_max
+                                  _assert
+                                  _errno
+                                  _exit
+                                  _iob
+                                  _isctype
+                                  _open_osfhandle
+                                  _pctype
+                                  abort
+                                  atoi
+                                  calloc
+                                  clock
+                                  exit
+                                  fclose
+                                  fflush
+                                  fgets
+                                  fopen
+                                  fprintf
+                                  fputc
+                                  fputs
+                                  fread
+                                  free
+                                  fseek
+                                  ftell
+                                  fwrite
+                                  getenv
+                                  localeconv
+                                  malloc
+                                  memchr
+                                  memcpy
+                                  memmove
+                                  memset
+                                  rand
+                                  realloc
+                                  sprintf
+                                  srand
+                                  sscanf
+                                  strcat
+                                  strchr
+                                  strcmp
+                                  strcpy
+                                  strcspn
+                                  strerror
+                                  strlen
+                                  strncpy
+                                  strrchr
+                                  strspn
+                                  strstr
+                                  strtoul
+                                  time
+                                  wcslen
+
+
+[+] Virus Total report available:
+
+
+VirusTotal Report
+----------------------------------------------------------------------
+
+Sections
+----------------------------------------------------------------------
+    Name      Entropy   R_Size    V_Size   Flags
+    --------------------------------------------
+
+    .text       6.17     45056     44339     rx   
+    .rdata      2.68      8192      4714     r    
+    .data       0.34      4096      4032     rw   
+    .rsrc       5.74     24576     24560     r    
+
+
+
+Libraries/Imports
+----------------------------------------------------------------------
+    ADVAPI32.DLL             RegOpenKeyExA
+                             RegQueryValueExA
+                             RegCloseKey
+
+    KERNEL32.dll             DeviceIoControl
+                             EnterCriticalSection
+                             GetModuleFileNameW
+                             GetLastError
+                             TryEnterCriticalSection
+                             FreeLibrary
+                             QueryPerformanceCounter
+                             LocalAlloc
+                             GetProcessTimes
+                             GetThreadLocale
+                             TlsAlloc
+                             VirtualProtect
+                             GetVersionExA
+                             LoadLibraryA
+                             DeleteCriticalSection
+                             GetCurrentProcess
+                             GetDriveTypeW
+                             GetCurrentProcessId
+                             CreateDirectoryA
+                             OpenFileMappingA
+                             MultiByteToWideChar
+                             SetFilePointerEx
+                             GetCommandLineA
+                             GetProcAddress
+                             GetProcessHeap
+                             LeaveCriticalSection
+                             CreateMutexA
+                             IsDBCSLeadByteEx
+                             GetTempPathA
+                             WideCharToMultiByte
+                             MapViewOfFile
+                             TlsFree
+                             GetModuleHandleA
+                             ReadFile
+                             InterlockedExchange
+                             WriteFile
+                             GetStartupInfoA
+                             CloseHandle
+                             GetSystemTimeAsFileTime
+                             GetProcessWorkingSetSize
+                             GetThreadTimes
+                             GetACP
+                             LocalFree
+                             GlobalMemoryStatus
+                             InitializeCriticalSection
+                             UnmapViewOfFile
+                             TlsGetValue
+                             Sleep
+                             TlsSetValue
+                             CreateFileA
+                             GetTickCount
+                             GetCurrentThreadId
+                             GetCurrentThread
+                             GetFileSize
+                             InterlockedIncrement
+
+    msvcrt.dll               rand
+                             malloc
+                             sscanf
+                             _access
+                             realloc
+                             fread
+                             fclose
+                             strcat
+                             __dllonexit
+                             _open_osfhandle
+                             abort
+                             _setmode
+                             _assert
+                             _fstat
+                             fgets
+                             fflush
+                             fopen
+                             strlen
+                             strncpy
+                             strchr
+                             fputc
+                             strcspn
+                             _errno
+                             fwrite
+                             strtoul
+                             fseek
+                             _open
+                             _getpid
+                             wcslen
+                             fputs
+                             ftell
+                             strcpy
+                             _strdup
+                             sprintf
+                             time
+                             exit
+                             srand
+                             _close
+                             memset
+                             _isctype
+                             strrchr
+                             _pctype
+                             free
+                             getenv
+                             atoi
+                             __lc_codepage
+                             calloc
+                             _write
+                             _stricmp
+                             memcpy
+                             strstr
+                             memmove
+                             _read
+                             clock
+                             strerror
+                             strcmp
+                             _lseek
+                             strspn
+                             __mb_cur_max
+                             fprintf
+                             _exit
+                             localeconv
+                             memchr
+                             _iob
+
+Detection
+----------------------------------------------------------------------
+    Scan Date:                         2021-05-28 09:19:22
+    Detected:                          56/69
+
+
+    Vendor                   Detected  Result
+    ------------------------------------------------------------------
+
+    Bkav                     False     None
+    Lionic                   True      Trojan.Win32.Yakes.4!c
+    Elastic                  True      malicious (high confidence)
+    DrWeb                    True      Trojan.Dridex.775
+    MicroWorld-eScan         True      Trojan.GenericKD.46359923
+    FireEye                  True      Generic.mg.e95f05e6b74da61d
+    CAT-QuickHeal            True      Trojan.MultiRI.S19956481
+    McAfee                   True      Drixed-FJX!E95F05E6B74D
+    Cylance                  True      Unsafe
+    Zillya                   True      Trojan.Kryptik.Win32.3055410
+    Paloalto                 True      generic.ml
+    Sangfor                  True      Trojan.Win32.Save.a
+    K7AntiVirus              True      Riskware ( 0040eff71 )
+    Alibaba                  True      Trojan:Win32/Dridex.71e2b24e
+    K7GW                     True      Riskware ( 0040eff71 )
+    CrowdStrike              True      win/malicious_confidence_90% (W)
+    BitDefenderTheta         True      Gen:NN.ZedlaF.34692.ju8@auz2kFfi
+    Cyren                    True      W32/Dridex.CV.gen!Eldorado
+    Symantec                 True      Packed.Generic.517
+    ESET-NOD32               True      a variant of Win32/Kryptik.HKLA
+    APEX                     True      Malicious
+    Avast                    True      Win32:BankerX-gen [Trj]
+    ClamAV                   True      Win.Malware.Ffqf-9852717-0
+    Kaspersky                True      HEUR:Trojan.Win32.Yakes.pef
+    BitDefender              True      Trojan.GenericKD.46359923
+    NANO-Antivirus           True      Trojan.Win32.Yakes.iudgtf
+    SUPERAntiSpyware         False     None
+    Tencent                  True      Win32.Trojan.Yakes.Akpb
+    Ad-Aware                 True      Trojan.GenericKD.46359923
+    Emsisoft                 True      Trojan.GenericKD.46359923 (B)
+    Comodo                   True      Malware@#1xn1myv03p6mw
+    F-Secure                 True      Trojan.TR/Crypt.XPACK.Gen2
+    Baidu                    False     None
+    VIPRE                    True      Trojan.Win32.Generic!BT
+    TrendMicro               True      TrojanSpy.Win32.DRIDEX.SMTHF
+    McAfee-GW-Edition        True      BehavesLike.Win32.Drixed.cc
+    CMC                      False     None
+    Sophos                   True      Mal/Generic-R + Mal/EncPk-APX
+    SentinelOne              False     None
+    GData                    True      Trojan.GenericKD.46359923
+    Jiangmin                 True      Trojan.Multi.sw
+    Webroot                  False     None
+    Avira                    True      TR/Crypt.XPACK.Gen2
+    MAX                      False     None
+    Antiy-AVL                False     None
+    Kingsoft                 True      Win32.Troj.Undef.(kcloud)
+    Gridinsoft               True      Trojan.Win32.Kryptik.oa
+    Arcabit                  True      Trojan.Generic.D2C36573
+    ViRobot                  True      Trojan.Win32.Z.Dridex.162304.CMM
+    ZoneAlarm                True      HEUR:Trojan.Win32.Yakes.pef
+    Microsoft                True      Trojan:Win32/Dridex.PAC!MTB
+    Cynet                    True      Malicious (score: 100)
+    AhnLab-V3                True      Trojan/Win.Dridex.C4433034
+    Acronis                  False     None
+    VBA32                    True      Trojan.Yakes
+    ALYac                    True      Spyware.Banker.Dridex
+    TACHYON                  False     None
+    Malwarebytes             True      Trojan.Dridex
+    Zoner                    False     None
+    TrendMicro-HouseCall     True      TrojanSpy.Win32.DRIDEX.SMTHF
+    Rising                   True      Trojan.Kryptik!1.D52E (CLOUD)
+    Yandex                   True      Trojan.Kryptik!7L9ptSuyzIo
+    Ikarus                   True      Trojan.Agent
+    eGambit                  True      Unsafe.AI_Score_98%
+    Fortinet                 True      W32/Dridex.AZ!tr
+    MaxSecure                False     None
+    AVG                      True      Win32:BankerX-gen [Trj]
+    Panda                    True      Trj/Genetic.gen
+    Qihoo-360                False     None
+    ----------------------------------------------------------------------
+
+
+[+] Summary Complete.
+
+
