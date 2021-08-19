@@ -21,6 +21,7 @@ def get_args():
 
     args = parser.parse_args()
     
+    #check if file exists and if it has "Magic" number
     if not os.path.isfile(args.file) or open(args.file, "rb").read(2).decode() != 'MZ':
         parser.error(f'"{args.file}" is not a valid PE file.')
 
@@ -70,6 +71,7 @@ def getImports(pe):
 
 #---------------------------------------------------------------------------------
 def getSections(pe):
+    """Get section information"""
 
     print(f'[{Fore.GREEN}+{Style.RESET_ALL}] {"Number of Sections: ":30s}{pe.FILE_HEADER.NumberOfSections} ')
     print(f'[{Fore.GREEN}+{Style.RESET_ALL}] Section table:\n')
@@ -94,8 +96,9 @@ def getSections(pe):
 
 #---------------------------------------------------------------------------------
 def virusTotalReport(apiKey, hash_md5):
+    """Query VT for file info. Use V2 and V3 of API for all FREE info"""
 
-
+    #Get API V3 info
     try:
         client = vt.Client(f'{apiKey}')
         file = client.get_object(f'/files/{hash_md5.hexdigest()}')
@@ -132,6 +135,7 @@ def virusTotalReport(apiKey, hash_md5):
         
     client.close()
 
+    #Get V2 vendor detection data
     try:
         url = 'https://virustotal.com/vtapi/v2/file/report'
         parameters = {'apikey': '362793d7648c596f8bd4ddcf35e2c8a24c810fc7401153453085bcfbd1fabbc2', 'resource': '247705d987c18bd67702a8442ee0fce6028e1973951786052e8ed5897b007707'}
@@ -161,6 +165,7 @@ def virusTotalReport(apiKey, hash_md5):
 
 #---------------------------------------------------------------------------------
 def graphic():
+    """Print cheesy graphic"""
 
     print(f"         {Fore.GREEN}                    ____")
     print(f"           ____  ____  ___  / __ \\____  ____________  _____")
@@ -183,14 +188,14 @@ def getOptionalHeaderData(pe):
 
 #---------------------------------------------------------------------------------
 def getStrings(args):
-    """Get file strings"""
+    """Print file strings to separate file <default=peStrings.txt>"""
 
     os.system(f'strings {args.file} > {args.strings}')
 
 
 #---------------------------------------------------------------------------------
 def getEntropy(args):
-    """Get file entropy"""
+    """Get file entropy and predict if packed"""
 
     packed = ''
 
